@@ -1,0 +1,9 @@
+{
+  "name": "room-server-nodejs",
+  "version": "1.0.0",
+  "dependencies": {
+    "engine.io": "^3.3.1",
+    "express": "^4.13.4",
+    "socket.io": "^2.1.1"
+  }
+}
