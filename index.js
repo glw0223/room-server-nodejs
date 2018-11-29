@@ -108,7 +108,7 @@ io.on('connection', (socket) => {
             --numUsers;
 
             // echo globally that this client has left
-            socket.broadcast.emit('user left', {
+            io.to(roomID).emit('user left', {
                 username: socket.username,
                 numUsers: numUsers
             });
